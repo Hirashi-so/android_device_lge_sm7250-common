@@ -78,6 +78,13 @@ PRODUCT_COPY_FILES += \
 # Board API level
 BOARD_SHIPPING_API_LEVEL := 30
 
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
+
+$(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
