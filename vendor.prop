@@ -1,0 +1,260 @@
+# Audio
+aaudio.hw_burst_min_usec=2000
+aaudio.mmap_exclusive_policy=2
+aaudio.mmap_policy=2
+audio.dolby.ds2.enabled=false
+audio.dolby.ds2.hardbypass=false
+audio.offload.24bit.enable=1
+audio.offload.video=false
+persist.vendor.audio.ambisonic.auto.profile=false
+persist.vendor.audio.ambisonic.capture=false
+persist.vendor.audio.apptype.multirec.enabled=false
+persist.vendor.audio.avs.afe_api_version=2
+persist.vendor.audio.fluence.speaker=true
+persist.vendor.audio.fluence.tmic.enabled=false
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.ras.enabled=false
+persist.vendor.audio.speaker.prot.enable=false
+persist.vendor.audio.spv3.enable=true
+persist.vendor.audio.voicecall.speaker.stereo=false
+ro.product.lge.audio.4mic=true
+ro.vendor.audio.sdk.fluencetype=nxp
+ro.vendor.audio.sdk.ssr=false
+vendor.audio.adm.buffering.ms=2
+vendor.audio.dolby.ds2.enabled=false
+vendor.audio.dolby.ds2.hardbypass=false
+vendor.audio.enable.mirrorlink=false
+vendor.audio.flac.sw.decoder.24bit=true
+vendor.audio.hal.boot.timeout.ms=20000
+vendor.audio.hal.output.suspend.supported=false
+vendor.audio.hw.aac.encoder=true
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.gapless.enabled=true
+vendor.audio.offload.multiaac.enable=true
+vendor.audio.offload.multiple.enabled=false
+vendor.audio.offload.passthrough=false
+vendor.audio.offload.pcm.16bit.enable=false
+vendor.audio.offload.track.enable=true
+vendor.audio.parser.ip.buffer.size=262144
+vendor.audio.safx.pbe.enabled=false
+vendor.audio.tunnel.encode=false
+vendor.audio.use.sw.alac.decoder=true
+vendor.audio.use.sw.ape.decoder=true
+vendor.audio.use.sw.mpegh.decoder=true
+vendor.audio.volume.headset.gain.depcal=true
+vendor.audio_hal.in_period_size=144
+vendor.audio_hal.period_multiplier=3
+vendor.audio_hal.period_size=192
+vendor.voice.path.for.pcm.voip=false
+
+# Audio - features
+vendor.audio.feature.a2dp_offload.enable=true
+vendor.audio.feature.afe_proxy.enable=true
+vendor.audio.feature.anc_headset.enable=true
+vendor.audio.feature.audiozoom.enable=false
+vendor.audio.feature.battery_listener.enable=true
+vendor.audio.feature.compr_cap.enable=false
+vendor.audio.feature.compr_voip.enable=true
+vendor.audio.feature.compress_in.enable=true
+vendor.audio.feature.compress_meta_data.enable=true
+vendor.audio.feature.concurrent_capture.enable=true
+vendor.audio.feature.custom_stereo.enable=true
+vendor.audio.feature.deepbuffer_as_primary.enable=false
+vendor.audio.feature.display_port.enable=true
+vendor.audio.feature.dsm_feedback.enable=false
+vendor.audio.feature.dynamic_ecns.enable=true
+vendor.audio.feature.ext_hw_plugin.enable=false
+vendor.audio.feature.external_dsp.enable=false
+vendor.audio.feature.external_speaker.enable=false
+vendor.audio.feature.external_speaker_tfa.enable=false
+vendor.audio.feature.fluence.enable=true
+vendor.audio.feature.fm.enable=true
+vendor.audio.feature.hdmi_edid.enable=true
+vendor.audio.feature.hdmi_passthrough.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.hifi_audio.enable=false
+vendor.audio.feature.hwdep_cal.enable=false
+vendor.audio.feature.incall_music.enable=true
+vendor.audio.feature.keep_alive.enable=true
+vendor.audio.feature.kpi_optimize.enable=true
+vendor.audio.feature.maxx_audio.enable=false
+vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.ras.enable=true
+vendor.audio.feature.record_play_concurency.enable=false
+vendor.audio.feature.snd_mon.enable=true
+vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.feature.src_trkn.enable=true
+vendor.audio.feature.ssrec.enable=true
+vendor.audio.feature.usb_offload.enable=true
+vendor.audio.feature.usb_offload_burst_mode.enable=true
+vendor.audio.feature.usb_offload_sidetone_volume.enable=false
+vendor.audio.feature.vbat.enable=true
+vendor.audio.feature.wsa.enable=false
+
+# Audio - LGE
+persist.vendor.lge.audio.handset_rx_type=DEFAULT
+persist.vendor.lge.audio.hifi_adv_support=0
+persist.vendor.lge.audio.hifi_dac=no_use
+persist.vendor.lge.audio.nsenabled=ON
+vendor.lge.audio.hifi_rec.concert_gain=-140
+vendor.lge.audio.hifi_rec.concert_lcf=0
+vendor.lge.audio.hifi_rec.concert_lmt=0
+vendor.lge.audio.hifi_rec.normal_gain=0
+vendor.lge.audio.hifi_rec.normal_lcf=75
+vendor.lge.audio.hifi_rec.normal_lmt=0
+vendor.lge.audio.hifi_rec.offset_gain=39
+
+# Bluetooth
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
+persist.bluetooth.a2dp_offload.disabled=false
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
+persist.vendor.bt.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=false
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.soc=cherokee
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+ro.bluetooth.a2dp_offload.supported=true
+ro.vendor.bluetooth.wipower=false
+
+# Camera
+camera.disable_zsl_mode=true
+persist.product.lge.camera.motor_delay=300
+persist.product.lge.motor.popup_cam.check_count=5
+persist.product.lge.motor.popup_cam.check_interval=2
+persist.product.lge.motor.popup_cam.default_freq_idx=17
+persist.product.lge.motor.popup_cam.freefall_freq_idx=16
+persist.product.lge.motor.popup_cam.mute_delay=90
+persist.product.lge.motor.popup_cam.retry_count=2
+vendor.camera.aux.packagelist=com.lge.camera,com.lge.cinemagraph,org.codeaurora.snapcam,com.lge.servicemenu
+
+# Chipset
+ro.soc.manufacturer=QTI
+
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# Dalvik
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapmaxfree=16m
+dalvik.vm.heapminfree=4m
+dalvik.vm.heapsize=512m
+dalvik.vm.heapstartsize=8m
+dalvik.vm.heaptargetutilization=0.5
+
+# Display
+persist.vendor.lge.display.enable.qct_ltm_for_damping=1
+persist.vendor.lge.display.enable.qct_ltm_for_ve=1
+ro.vendor.display.sensortype=2
+vendor.display.comp_mask=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_idle_time_hdr=0
+vendor.display.disable_idle_time_video=0
+vendor.display.disable_mask_layer_hint=1
+vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
+vendor.display.disable_system_load_check=1
+vendor.display.enable_allow_idle_fallback=1
+vendor.display.enable_async_powermode=0
+vendor.display.enable_camera_smooth=1
+vendor.display.enable_optimize_refresh=1
+vendor.display.enable_perf_hint_large_comp_cycle=1
+vendor.display.enable_posted_start_dyn=1
+vendor.display.limit_external_dedicated_pipe=1
+vendor.display.use_smooth_motion=0
+
+# DPM
+persist.vendor.dpm.feature=0
+persist.vendor.dpmhalservice.enable=1
+
+# DRM
+drm.service.enabled=true
+
+# FM
+vendor.lge.fm_gain_control_headset=0.5
+vendor.lge.fm_gain_control_speaker=0.5
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# GPS
+persist.backup.ntpServer=0.pool.ntp.org
+
+# Graphics
+debug.egl.hw=0
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.high_fps_early_gl_phase_offset_ns=-4000000
+debug.sf.high_fps_early_phase_offset_ns=-4000000
+debug.sf.high_fps_late_app_phase_offset_ns=1000000
+debug.sf.high_fps_late_sf_phase_offset_ns=-4000000
+debug.sf.hw=0
+debug.sf.latch_unsignaled=1
+debug.sf.perf_fps_early_gl_phase_offset_ns=-5000000
+debug.sf.perf_fps_early_phase_offset_ns=-5000000
+debug.sf.perf_fps_late_sf_phase_offset_ns=-5000000
+debug.sf.treat_170m_as_sRGB=1
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+vendor.gralloc.disable_ubwc=0
+vendor.opengles.version=196610
+
+# Incremental FS
+ro.incremental.enable=1
+
+# Media
+debug.stagefright.ccodec=1
+debug.stagefright.omx_default_rank=0
+
+# Netflix
+ro.netflix.bsp_rev=Q7250-19133-1
+
+# OEM Unlock
+ro.oem_unlock_supported=1
+
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
+# Radio
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.disable_retry=true
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.no_wait_for_card=1
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.rat_on=combine
+persist.vendor.radio.sib16_support=1
+ro.telephony.default_network=27
+ro.telephony.iwlan_operation_mode=AP-assisted
+
+# Sensors
+persist.vendor.debug.sensors.daemon=d
+persist.vendor.debug.sensors.hal=d
+persist.vendor.lge.sensors.hd_press_detect=2
+persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.debug.ssc_qmi_debug=true
+
+# USB
+vendor.usb.diag.func.name=diag
+vendor.usb.use_ffs_mtp=0
+
+# WiFi
+wifi.aware.interface=wifi-aware0
+
+# Surface Flinger
+ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.protected_contents=true
+ro.surface_flinger.set_touch_timer_ms=200
+ro.surface_flinger.use_color_management=true
+ro.surface_flinger.wcg_composition_dataspace=143261696
