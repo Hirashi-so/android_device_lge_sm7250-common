@@ -201,8 +201,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/media_profiles_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_vendor.xml
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayCommon \
+    FrameworksResOverlayCommon \
+    WifiOverlayCommon
 
 # Partitions
 PRODUCT_PACKAGES += \
