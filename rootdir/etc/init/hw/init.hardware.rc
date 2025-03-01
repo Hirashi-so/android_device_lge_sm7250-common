@@ -34,9 +34,6 @@ service vendor.ipd /vendor/bin/ipd
     group radio system net_raw
 # IMEI_Protection end
 
-on early-fs
-    ffu_update
-
 on post-fs
 # Support tuxera exfat filesystem
     insmod /vendor/lib/modules/texfat.ko
