@@ -77,6 +77,7 @@ BOARD_KERNEL_CMDLINE := \
 	ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 \
 	swiotlb=2048 androidboot.configfs=true loop.max_part=7 \
 	androidboot.usbcontroller=a600000.dwc3
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
