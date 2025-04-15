@@ -313,6 +313,8 @@ PRODUCT_PACKAGES += \
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
+    firmware_wlan_mac.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink \
     hostapd \
     libwpa_client \
     libwifi-hal-ctrl \
