@@ -1,0 +1,12 @@
+//
+// Copyright (C) 2022-2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library {
+    name: "libhidlbase_camera_shim",
+    srcs: ["libhidlbase_camera_shim.cpp"],
+    compile_multilib: "both",
+    vendor: true,
+}
