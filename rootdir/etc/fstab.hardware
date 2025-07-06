@@ -35,7 +35,6 @@ product                                                 /product                
 vendor                                                  /vendor                 ext4    ro,barrier=1,discard                                 wait,slotselect,avb,logical,first_stage_mount
 /dev/block/by-name/metadata                             /metadata               ext4    noatime,nosuid,nodev,discard                         wait,check,formattable,wrappedkey,first_stage_mount
 /dev/block/by-name/drm                                  /mnt/vendor/persist-lg  ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue          wait,check,formattable,first_stage_mount
-/dev/block/by-name/OP                                   /mnt/product/OP         ext4    ro,noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc          wait,slotselect,avb,nofail,first_stage_mount
 # Add fs_mgr flag - sysfs_path=/sys/devices/platform/soc/xxxx.[ufshc|sdhci] to userdata entry, based on UFS|eMMC device.
 /dev/block/bootdevice/by-name/userdata                  /data                   f2fs    noatime,nosuid,nodev,discard,reserve_root=32768,resgid=1065,fsync_mode=nobarrier,inlinecrypt  latemount,wait,check,formattable,quota,reservedsize=128M,fileencryption=ice,wrappedkey,checkpoint=fs,sysfs_path=/sys/devices/platform/soc/1d84000.ufshc
 /dev/block/bootdevice/by-name/persist                   /mnt/vendor/persist     ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue          wait,check,formattable
@@ -47,7 +46,4 @@ vendor                                                  /vendor                 
 /dev/block/bootdevice/by-name/ftm                       /ftm                    emmc    defaults                                             defaults
 /dev/block/bootdevice/by-name/els                       /mnt/product/els        ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue          wait,check,formattable
 /dev/block/bootdevice/by-name/sns                       /mnt/vendor/sns         ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue          wait,check,formattable
-/dev/block/bootdevice/by-name/p_persist_lg              /mnt/product/persist-lg ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue          wait,check,formattable
-/dev/block/bootdevice/by-name/mpt                       /mnt/product/mpt        ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue          wait,check,formattable
-/dev/block/bootdevice/by-name/srtc                      /mnt/product/srtc       ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue          wait,check,formattable
 /dev/block/bootdevice/by-name/power                     /mnt/vendor/power       ext4    nosuid,nodev,barrier=1,noatime,noauto_da_alloc,errors=continue          wait,check,formattable
