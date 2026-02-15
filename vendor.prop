@@ -178,6 +178,9 @@ persist.vendor.dpmhalservice.enable=1
 # DRM
 drm.service.enabled=true
 
+# Fastbootd
+ro.fastbootd.available=true
+
 # FM
 vendor.lge.fm_gain_control_headset=0.5
 vendor.lge.fm_gain_control_speaker=0.5
