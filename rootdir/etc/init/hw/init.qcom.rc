@@ -727,13 +727,6 @@ service profiler_daemon /system/bin/profiler_daemon
     group root
     disabled
 
-service logger /system/bin/logcat -b all -D -f /dev/block/by-name/pstore
-    class charger
-    user root
-    group root system
-    disabled
-    oneshot
-
 service vendor.ssr_diag /system/vendor/bin/ssr_diag
     class late_start
     user system
@@ -812,20 +805,9 @@ service esepmdaemon /system/vendor/bin/esepmdaemon
     user system
     group nfc
 
-on charger
-    trigger early-fs
-    trigger fs
-    trigger post-fs
-    trigger late-fs
-    trigger post-fs-data
-    class_stop main
-    class_stop late_start
-
-    start logger
-    #write /sys/module/qpnp_power_on/parameters/smpl_en 0
-    #write /sys/module/qpnp_power_on/parameters/smpl_en 1
-    setprop persist.sys.usb.config mass_storage
-    start qcom-post-boot
+#on charger
+#    setprop persist.sys.usb.config mass_storage
+#    start qcom-post-boot
 
 #add poweroffhandler
 service poweroffhandler /system/vendor/bin/poweroffhandler

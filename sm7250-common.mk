@@ -232,7 +232,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/root/init.recovery.hardware.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.$(DEVICE_NAME).rc
 
 $(call soong_config_set,lineage_recovery,bootloader_message_offset,128)
-$(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
+#$(call soong_config_set_bool,recovery,target_recovery_uses_qti_drm,true)
 
 # Sensors
 PRODUCT_PACKAGES += \

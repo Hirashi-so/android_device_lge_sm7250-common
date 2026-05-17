@@ -69,3 +69,6 @@ on boot
 
 on property:sys.boot_completed=1
     write /sys/devices/platform/soc/soc:gpio_keys/swivel_event_refresh 1
+
+on charger
+    restart vendor.charger

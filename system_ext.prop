@@ -20,3 +20,5 @@ persist.vendor.dpm.feature=11
 
 # Radio
 telephony.active_modems.max_count=2
+
+ro.charger.enable_suspend=1
