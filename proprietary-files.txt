@@ -150,7 +150,7 @@ vendor/bin/qdcmss
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib64/libdisp-aba.so
-vendor/lib64/libdpps.so
+# vendor/lib64/libdpps.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
@@ -456,8 +456,8 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
 # Res Control
-vendor/bin/hw/vendor.lge.hardware.powerhint.rescontrol@2.0-service
-vendor/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc
+# vendor/bin/hw/vendor.lge.hardware.powerhint.rescontrol@2.0-service
+# vendor/etc/init/vendor.lge.hardware.powerhint.rescontrol@2.0-service.rc
 vendor/lib/libvendor_rescontrol.so
 vendor/lib/vendor.lge.hardware.powerhint.rescontrol@2.0-common.so
 vendor/lib/vendor.lge.hardware.powerhint.rescontrol@2.0.so
