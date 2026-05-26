@@ -326,3 +326,6 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/lge/sm7250-common/sm7250-common-vendor.mk)
+# Define the header include directory for LGE Lights HAL compilation
+$(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
+$(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,hardware/lge/aidl/light)
