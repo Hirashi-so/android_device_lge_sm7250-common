@@ -326,6 +326,17 @@ PRODUCT_COPY_FILES += \
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/lge/sm7250-common/sm7250-common-vendor.mk)
+
 # Define the header include directory for LGE Lights HAL compilation
 $(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 $(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,hardware/lge/aidl/light)
+
+# Disable LG specific RIL extensions (VSS) to fix 0 dBm signal strength bug
+# Forces qcrild to use AOSP standard signal strength reporting
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.radio.vss_enabled=0 \
+    vendor.lge.ril.vss.common_init=0 \
+    vendor.lge.ril.vss.nv_init=0 \
+    persist.vendor.radio.custom_ecc=0 \
+    ril.subscription.types=RUIM \
+    ro.telephony.default_network=20

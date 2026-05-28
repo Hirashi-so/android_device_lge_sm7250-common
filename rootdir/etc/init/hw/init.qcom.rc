@@ -89,7 +89,8 @@ on early-boot
     write /sys/devices/virtual/cvp/cvp/boot 1
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qcom.early_boot.sh
     exec u:r:vendor_qti_init_shell:s0 -- /vendor/bin/init.qti.can.sh
-    setprop ro.sf.lcd_density ${vendor.display.lcd_density}
+# Disable Qualcomm dynamic LCD density assignment to enforce custom density
+    # setprop ro.sf.lcd_density ${vendor.display.lcd_density}
 
     chown system system /mnt/vendor/persist/data/pfm/licenses
     chmod 0775 /mnt/vendor/persist/data/pfm/licenses
@@ -885,3 +886,9 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
     onrestart restart audioserver
+
+# Disable legacy configstore service to prevent 5-second crash loop
+service vendor.configstore-hal /vendor/bin/hw/android.hardware.configstore@1.1-service
+    override
+    class hal
+    disabled
