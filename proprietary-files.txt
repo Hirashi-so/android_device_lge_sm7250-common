@@ -758,3 +758,11 @@ vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wifi_concurrency_cfg.txt
 vendor/etc/wifi/wpa_supplicant_overlay.conf
+
+# Qualcomm Hardware Video Acceleration OMX Core Libraries
+vendor/lib/libOmxCore.so
+vendor/lib/libOmxVdec.so
+vendor/lib/libOmxVenc.so
+vendor/lib64/libOmxCore.so
+vendor/lib64/libOmxVdec.so
+vendor/lib64/libOmxVenc.so

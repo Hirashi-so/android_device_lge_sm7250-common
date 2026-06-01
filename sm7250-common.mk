@@ -112,6 +112,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml
 
+PRODUCT_COPY_FILES += \
+    device/lge/sm7250-common/configs/touch_dev.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/touch_dev.idc
+
+PRODUCT_COPY_FILES += \
+    device/lge/sm7250-common/configs/touch_dev.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/touch_dev.kl
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey

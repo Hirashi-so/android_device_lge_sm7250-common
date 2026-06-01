@@ -212,6 +212,24 @@ on boot
     chown system system /sys/class/sensors/apds9930-light/poll_delay
     chown system system /sys/class/sensors/apds9930-proximity/enable
     chown system system /sys/class/sensors/apds9930-proximity/poll_delay
+    
+    # Enable Double Tap to Wake (DT2W)
+    chown system system /sys/devices/virtual/input/lge_touch/tap2wake
+    chmod 0664 /sys/devices/virtual/input/lge_touch/tap2wake
+    write /sys/devices/virtual/input/lge_touch/tap2wake 1
+
+    # Enable Secure Touch for AOD Fingerprint (UDFPS)
+    chown system system /sys/devices/virtual/input/lge_touch/secure_touch_enable
+    chmod 0664 /sys/devices/virtual/input/lge_touch/secure_touch_enable
+
+    # Grant permissions for FOD HBM (High Brightness Mode) and Level
+    chown system system /sys/devices/virtual/panel/panel-0/brightness/fp_lhbm
+    chmod 0664 /sys/devices/virtual/panel/panel-0/brightness/fp_lhbm
+    chown system system /sys/devices/virtual/panel/panel-0/brightness/fp_lhbm_br_lvl
+    chmod 0664 /sys/devices/virtual/panel/panel-0/brightness/fp_lhbm_br_lvl
+    # Set Fingerprint Local HBM brightness to maximum
+    write /sys/devices/virtual/panel/panel-0/brightness/fp_lhbm_br_lvl 255
+
 
     # Create directory used for display
     # for backward compatibility
