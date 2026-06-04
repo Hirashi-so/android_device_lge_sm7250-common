@@ -346,3 +346,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.custom_ecc=0 \
     ril.subscription.types=RUIM \
     ro.telephony.default_network=20
+
+# Copy device-specific media seccomp policy to vendor
+PRODUCT_COPY_FILES += \
+    device/lge/sm7250-common/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
