@@ -164,6 +164,44 @@
                    channels="2" />
         </EncoderProfile>
 
+        <!-- 4K UHD H.264 & HEVC Standard Camcorder Profiles -->
+        <EncoderProfile quality="2160p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="42000000"
+                   width="3840"
+                   height="2160"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="156000"
+                   sampleRate="48000"
+                   channels="2" />
+        </EncoderProfile>
+
+        <EncoderProfile quality="2160phevc" fileFormat="mp4" duration="30">
+            <Video codec="hevc"
+                   bitRate="30000000"
+                   width="3840"
+                   height="2160"
+                   frameRate="30" />
+            <Audio codec="aac"
+                   bitRate="156000"
+                   sampleRate="48000"
+                   channels="2" />
+        </EncoderProfile>
+
+        <!-- 1080p HFR/High-Speed (60fps/120fps) Profile for Google Camera -->
+        <EncoderProfile quality="highspeed1080p" fileFormat="mp4" duration="30">
+            <Video codec="h264"
+                   bitRate="64000000"
+                   width="1920"
+                   height="1080"
+                   frameRate="120" />
+            <Audio codec="aac"
+                   bitRate="96000"
+                   sampleRate="48000"
+                   channels="2" />
+        </EncoderProfile>
+
         <EncoderProfile quality="hfr1080p60" fileFormat="mp4" duration="30">
             <Video codec="h264"
                    bitRate="24000000"
