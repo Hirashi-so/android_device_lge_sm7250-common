@@ -20,3 +20,7 @@ persist.vendor.dpm.feature=11
 
 # Radio
 telephony.active_modems.max_count=2
+
+# Enable dynamic DSDS toggle in system settings
+persist.radio.multisim.config=dsds
+persist.vendor.radio.multisim_switch_support=true
