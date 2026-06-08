@@ -22,5 +22,12 @@ persist.vendor.dpm.feature=11
 telephony.active_modems.max_count=2
 
 # Enable dynamic DSDS toggle in system settings
+# Force Dual SIM Dual Standby (DSDS) globally
 persist.radio.multisim.config=dsds
+ro.telephony.sim.count=2
+telephony.active_modems.max_count=2
 persist.vendor.radio.multisim_switch_support=true
+
+# LG Proprietary RIL configuration for multi-sim initialization
+ro.boot.vendor.lge.sim_num=2
+ro.lge.sim_num=2

@@ -350,3 +350,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Copy device-specific media seccomp policy to vendor
 PRODUCT_COPY_FILES += \
     device/lge/sm7250-common/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+
+# Ensure filesystem tools are built for SD card and OTG mounting support
+PRODUCT_PACKAGES += \
+    exfatprogs \
+    ntfs-3g
