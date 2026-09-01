@@ -311,4 +311,7 @@
     <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
     <bool name="config_displayBlanksAfterDoze">true</bool>
 
+    <!-- Set the number of physical SIM slots to 2 for DSDS support -->
+    <integer name="config_num_physical_slots">2</integer>
+
 </resources>
