@@ -170,3 +170,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
 include vendor/lge/sm7250-common/BoardConfigVendor.mk
+
+# Legacy ION userspace implementation required by Qualcomm QSEE blobs
+$(call soong_config_set_bool,libion,legacy_impl,true)
