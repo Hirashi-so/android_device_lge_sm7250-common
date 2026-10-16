@@ -310,8 +310,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml
 
 # Vibrator
+# Default LG vibrator HAL (WING uses its own implementation)
+ifeq ($(filter %_winglm,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.lge
+endif
 
 # WiFi
 PRODUCT_PACKAGES += \
