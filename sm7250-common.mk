@@ -359,3 +359,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     exfatprogs \
     ntfs-3g
+
+PRODUCT_PACKAGES += \
+    vendor.lge.radio-service.compat

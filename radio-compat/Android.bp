@@ -1,0 +1,9 @@
+license {
+    name: "vendor_lge_radio_compat_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-Apache-2.0",
+        "SPDX-license-identifier-NCSA",
+    ],
+    license_text: ["NOTICE"],
+}
